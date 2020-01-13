@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src={{url_for("static",filename="main.js")}}></script>
+<!-- AIzaSyApOKD2qYFCMFgHhd8rGFARGie211GS0uI -->
+<style>
+        /* Set the size of the div element that contains the map */
+       #map {
+         height: 400px;  /* The height is 400 pixels */
+         width: 100%;  /* The width is the width of the web page */
+        }
+     </style>
+<body onload="page_load_callback()">
+
+    <div class="w3-container w3-card">
+    <h1>Phone App</h1>
+    </div>
+    <div id="map"></div>
+
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApOKD2qYFCMFgHhd8rGFARGie211GS0uI&callback=initMap">
+        </script>
+</body>
